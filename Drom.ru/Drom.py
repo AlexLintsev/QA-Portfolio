@@ -59,7 +59,6 @@ class Chrome(unittest.TestCase):
         driver_chrome = self.driver
         driver_chrome.maximize_window()
         driver_chrome.get("https://auto.drom.ru/")
-        driver_chrome.maximize_window()
         assert driver_chrome.find_element(By.XPATH, "//*[@fill=\"#DB001B\"]")
         assert "Продажа автомобилей в России" in driver_chrome.title
         print("\"Продажа автомобилей в России\" for searchPanel test (Chrome) in title")
