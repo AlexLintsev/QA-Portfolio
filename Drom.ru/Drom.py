@@ -268,7 +268,6 @@ class Firefox(unittest.TestCase):
         driver_firefox = self.driver
         driver_firefox.maximize_window()
         driver_firefox.get("https://auto.drom.ru/")
-        driver_firefox.maximize_window()
         assert driver_firefox.find_element(By.XPATH, "//*[@fill=\"#DB001B\"]")
         assert "Продажа автомобилей в России" in driver_firefox.title
         print("\"Продажа автомобилей в России\" for searchPanel test (Firefox) in title")
@@ -478,7 +477,6 @@ class Edge(unittest.TestCase):
         driver_edge = self.driver
         driver_edge.maximize_window()
         driver_edge.get("https://auto.drom.ru/")
-        driver_edge.maximize_window()
         assert driver_edge.find_element(By.XPATH, "//*[@fill=\"#DB001B\"]")
         assert "Продажа автомобилей в России" in driver_edge.title
         print("\"Продажа автомобилей в России\" for searchPanel test (Edge) in title")
